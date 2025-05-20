@@ -1,0 +1,207 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 980;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #286013;
+    padding: 40px;
+    margin: 30px;
+    border-radius: 12px;
+    min-height: 600px;
+    max-width: 500px;
+    color: white;
+    gap: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 990;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    color: #fbc445;
+    text-shadow: 4px 4px #977117;
+}
+
+p {
+    font-size: 12px;
+    color: #ffffff;
+    text-shadow: 2px 2px #8b8b8b;
+    margin: 0;
+    text-align: center;
+}
+
+label {
+    color: #ffffff;
+    text-shadow: 2px 2px #8b8b8bc7;
+    font-size: 12px;
+    margin: 0;
+    text-align: left;
+}
+
+button {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fbc445;
+    text-shadow: 2px 2px #9771179c;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #e0b030;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(2px);  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: #d0a030;
+}
+
+span {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 12px;
+    color: #ffb300;
+    text-shadow: 2px 2px #977117;
+}
+
+.form-group, #login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.form-group input {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 12px;
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #000000;
+}
+
+.verification-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth-type-selector {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-block-end: 10px;
+}
+
+.register {
+    padding: 12px 0;
+    margin-top: 15px;
+    width: 60%;
+    align-self: center;
+    text-align: center;
+}
+
+.google-auth-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.google-auth-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    background-color: #fbc445;
+    color: #000000;
+    text-shadow: 2px 2px #9771179c;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.google-auth-button:hover {
+    background-color: #e0b030;
+    transform: translateY(-2px);
+}
+
+.google-auth-button:active {
+    transform: translateY(2px);  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: #d0a030;
+}
+
+.google-auth-button img {
+    width: 25px;
+    height: 25px;
+}
+
+.auth-transition-container {
+    position: relative;
+    width: 100%;
+    min-height: 300px; 
+}
+
+.auth-content {
+    position: absolute;
+    width: 100%;
+    animation: fadeSlide 0.3s ease-out forwards;
+}
+
+@keyframes fadeSlide {
+    from { 
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#login-form, .google-auth-section {
+    width: 100%;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+}
