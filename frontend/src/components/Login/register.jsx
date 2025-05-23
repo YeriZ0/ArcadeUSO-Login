@@ -55,7 +55,7 @@ const RegisterForm = ({ authType, switchToLogin }) => {
               <label htmlFor="passwordVerify">Comprobar contraseña</label>
               <div className="password-input-container">
                 <input
-                  type={showPasswordVerify ? "text" : "password"}
+                  type={!showPasswordVerify ? "text" : "password"}
                   id="passwordVerify" name="passwordVerify" required/>
                 <button 
                   type="button" 

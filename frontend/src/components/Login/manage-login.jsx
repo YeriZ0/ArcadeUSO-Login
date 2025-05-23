@@ -21,27 +21,30 @@ const ManegeLogin = ({ onClose }) => {
   return (
     <>
       <Modal title={title} onClose={onClose}>
-      <p>{description}</p>
-      
-      {application === 'register' && (
-        <AuthTypeSelector 
-          authType={authType} 
-          setAuthType={setAuthType} 
-        />
-      )}
-      
-      {application === 'register' ? (
-        <RegisterForm 
-          authType={authType}
-          setAuthType={setAuthType}
-          switchToLogin={() => setApplication('login')}
-        />
-      ) : (
-        <LoginForm 
-          switchToRegister={() => setApplication('register')}
-        />
-      )}
-    </Modal>
+        <p>{description}</p>
+
+        
+        {application === 'register' && (
+          <AuthTypeSelector 
+            authType={authType} 
+            setAuthType={setAuthType} 
+          />
+        )}
+        
+        <div className="transition-container">     
+          {application === 'register' ? (
+            <RegisterForm 
+              authType={authType}
+              setAuthType={setAuthType}
+              switchToLogin={() => setApplication('login')}
+            />
+          ) : (
+            <LoginForm 
+              switchToRegister={() => setApplication('register')}
+            />
+          )}
+        </div>
+      </Modal>
     </>
   );
 };

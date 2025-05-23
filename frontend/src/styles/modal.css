@@ -15,7 +15,7 @@
 .modal-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #286013;
     padding: 40px;
