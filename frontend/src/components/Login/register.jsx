@@ -43,7 +43,7 @@ const RegisterForm = ({ authType, switchToLogin }) => {
                   type="button" 
                   className="toggle-password" 
                   onClick={() => setShowPassword(!showPassword)}>
-                  {showPassword ?
+                  {!showPassword ?
                   <img src={iconSeePassword} /> : 
                   <img src={iconBlockPassword}/>}
                 </button>

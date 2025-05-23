@@ -30,7 +30,7 @@ const Login = ({ switchToRegister }) => {
                   type="button" 
                   className="toggle-password" 
                   onClick={() => setShowPassword(!showPassword)}>
-                  {showPassword ?
+                  {!showPassword ?
                   <img src={iconSeePassword} alt="Mostrar contraseña" /> : 
                   <img src={iconBlockPassword} alt="Ocultar contraseña"/>}
                 </button>
