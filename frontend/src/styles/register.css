@@ -1,0 +1,121 @@
+.username-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;  /* ancho del nickname */
+}
+
+.verification-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%; 
+}
+
+.auth-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%; /* ancho del formulario */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%; 
+}
+
+.password-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 30px;
+    background: transparent;
+    background-color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.toggle-password:hover {
+    background: none;
+    opacity: 0.6;
+}
+
+.toggle-password:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.0);
+}
+
+.toggle-password img {
+    position: relative;
+    bottom: 17px;
+    right: 23px;
+    scale: 0.70;
+}
+
+.password-input-container input {
+  width: 100%;
+  padding-right: 50px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.switch-button span {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 10px;
+    text-decoration: underline;
+    color: #f9f9f9;
+    text-shadow: 2px 2px #8b8b8bc7;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.google-auth-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 12px 20px;
+  background: #ffffff;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.google-auth-button:hover {
+  background: #f7f7f7;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.google-auth-button img {
+  width: 18px;
+  height: 18px;
+}
+

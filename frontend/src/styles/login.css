@@ -1,0 +1,20 @@
+.switch-button {
+    position: relative;
+    bottom: -15px;
+    color: #f9f9f9;
+    text-shadow: 2px 2px #8b8b8bc7;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.switch-button:hover {
+    color: #fbc445;
+    text-shadow: 2px 2px #977117;
+    background-color: #275317;
+    transform: translateY(-2px);
+}
+

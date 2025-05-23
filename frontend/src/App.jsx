@@ -1,10 +1,10 @@
-import Login from './components/Login/login.jsx'
+import ManegeLogin from "./components/Login/manage-login"
 
 function App() {
 
   return (
     <>
-      <Login />
+      <ManegeLogin />
     </>
   )
 }
