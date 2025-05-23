@@ -31,7 +31,7 @@ const ManegeLogin = ({ onClose }) => {
           />
         )}
         
-        <div className="transition-container">     
+        <div className="transition-container" key={application}>     
           {application === 'register' ? (
             <RegisterForm 
               authType={authType}

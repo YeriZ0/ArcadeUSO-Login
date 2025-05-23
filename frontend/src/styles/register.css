@@ -119,3 +119,36 @@
   height: 18px;
 }
 
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translatex(0);
+        transform: translateY(0);
+    }
+}
+
+.auth-container.local {
+    animation: fadeInRight 0.5s ease-out forwards;
+}
+
+.auth-container.google {
+    animation: fadeInLeft 0.5s ease-out forwards;
+}

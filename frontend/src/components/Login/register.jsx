@@ -22,7 +22,7 @@ const RegisterForm = ({ authType, switchToLogin }) => {
         </div>
       </div>
 
-      <div className="auth-container">
+      <div className={`auth-container ${authType === 'local' ? 'local' : 'google'}`} key={authType}>
         {authType === 'local' ? (
           <form id="login-form" className="auth-content">
 
@@ -55,13 +55,13 @@ const RegisterForm = ({ authType, switchToLogin }) => {
               <label htmlFor="passwordVerify">Comprobar contraseña</label>
               <div className="password-input-container">
                 <input
-                  type={!showPasswordVerify ? "text" : "password"}
+                  type={showPasswordVerify ? "text" : "password"}
                   id="passwordVerify" name="passwordVerify" required/>
                 <button 
                   type="button" 
                   className="toggle-password" 
                   onClick={() => setShowPasswordVerify(!showPasswordVerify)}>
-                  {showPasswordVerify ?
+                  {!showPasswordVerify ?
                   <img src={iconSeePassword} alt="Mostrar contraseña"/> : 
                   <img src={iconBlockPassword} alt="Ocultar contraseña"/>}
                 </button>

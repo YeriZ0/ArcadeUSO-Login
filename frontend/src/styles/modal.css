@@ -15,21 +15,23 @@
 .modal-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #286013;
     padding: 40px;
     margin: 30px;
     border-radius: 12px;
     max-width: 450px;
-    min-height: 589px;
+    min-height: 500px;
     max-height: 600px;
     color: white;
-    gap: 10px;
+    gap: 30px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     z-index: 990;
     position: relative;
+    animation: fadeIn 1s ease-in-out forwards;
 }
+
 
 .modal-container h1 {
     font-size: 18px;
@@ -39,15 +41,6 @@
     width: 70%;
     color: #fbc445;
     text-shadow: 4px 4px #977117;
-}
-
-.modal-container p {
-    width: 80%;
-    font-size: 10px;
-    color: #ffffff;
-    text-shadow: 2px 2px #8b8b8b;
-    margin: 0;
-    text-align: center;
 }
 
 .close-button {
@@ -67,4 +60,16 @@
 .close-button:hover {
     color: #574212;
     transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: rotate(-5deg) translateZ(0) scale(0.8);
+        
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg) translateZ(0) scale(1);
+    }
 }
